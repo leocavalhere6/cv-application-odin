@@ -1,0 +1,86 @@
+.previewSection {
+    margin-top: 75px;
+}
+
+.name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 15px 0;
+}
+
+.contactIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.contact-holder {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.contact-holder, .companyInfo, .responsibilities {
+    color: #4e4e4e;
+}
+
+.experienceHeader {
+    margin: 30px 0 0;
+    font-weight: 600;
+}
+
+.experienceItem {
+    display: flex;
+    gap: 60px;
+    margin-top: 15px;
+}
+
+.companyInfo {
+    min-width: 260px;
+    max-width: 260px;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.educationTitleHolder {
+    display: flex;
+    align-items: center;
+}
+
+.downloadBtn {
+    display: block;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 760px) {
+    .experienceItem {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .downloadBtn {
+        display: block;
+        margin: auto;
+    }
+}

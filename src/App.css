@@ -1,0 +1,104 @@
+.wrapper {
+  margin: 30px auto 0;
+  max-width: 1024px;
+  padding-bottom: 30px;
+}
+
+.generalWrapper {
+  background-color: #fffbef;
+  border-radius: 30px;
+  height: fit-content;
+  padding: 10px; 
+}
+
+.educationWrapper {
+  background-color: #effff6;
+  border-radius: 30px;
+  height: fit-content;
+  padding: 10px;
+}
+
+.experienceWrapper {
+  background-color: #eff3ff;
+  border-radius: 30px;
+  height: fit-content;
+  padding: 10px;
+}
+
+.placeholderWrapper {
+  background-image: linear-gradient(
+  135deg,
+  hsl(45deg 100% 97%) 0%,
+  hsl(69deg 66% 97%) 24%,
+  hsl(103deg 75% 97%) 35%,
+  hsl(137deg 92% 97%) 45%,
+  hsl(155deg 81% 97%) 55%,
+  hsl(180deg 52% 96%) 65%,
+  hsl(207deg 73% 96%) 76%,
+  hsl(225deg 100% 97%) 100%
+  );
+  border-radius: 30px;
+  height: auto;
+}
+
+.placeholderWrapper button {
+  margin: auto;
+  padding: 20px 60px;
+  border: 2px solid #121212;
+  background-color: #ffffff80;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all .2s ease-in;
+}
+
+.placeholderWrapper button:hover, .placeholderWrapper button:focus {
+  background-color: #ffffff;
+}
+
+.educationWrapper, .experienceWrapper, .generalWrapper, .placeholderWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.pairSections {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+button {
+  padding: 10px 30px;
+  width: fit-content;
+  border: none;
+  background-color: #121212;
+  color: #fff;
+  border-radius: 5px;
+}
+
+button:hover, button:focus {
+  background-color: #2c2c2c;
+}
+
+@media screen and (max-width: 1050px) {
+  .wrapper {
+      padding: 0 10px 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pairSections {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+
+      flex-direction: column;
+  }
+
+  .placeholderWrapper button {
+      margin: 50px auto;
+  }
+}
